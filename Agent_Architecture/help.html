@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Agent Help</title>
+    <link rel="stylesheet" href="basic_search.css" />
+</head>
+<body>
+
+<h1>Checkboxes</h1>
+<p>If a checkbox is selected this signifies that the effect it is next to will be enabled.</p>
+
+<h1>Modifiers</h1>
+<p><strong>Children At Play:</strong>There is a percent chance that a random tile will gain a value level.</p>
+<p><strong>Murphy's Law:</strong>There is a percent chance the agent will fail to decrease the value of the tile and instead increase the value.</p>
+<p><strong>Child Interference:</strong>Agent will randomly be picked up and dropped off at a random location.</p>
+<p><strong>Hyper Action:</strong>The agent can act two or three times on a tile based upon the percentages</p>
+
+<h1>Agents</h1>
+<p><strong>Number Of Agents:</strong>Represents the number of agents that will be acting on the environment.</p>
+<p><strong>Start Location:</strong>A number should be placed here to indicate the tile number the specific vacuum should start on.</p>
+<p><strong>Agent Type:</strong>Dictates the type of actions the agent will take when active.</p>
+
+<h1>Misc.</h1>
+<p><strong>Number of initial Bugs:</strong>A number should be placed here to indicate the number of bugs that should be placed on the environment before the agents run.</p>
+<p><strong>Width:</strong>This dictates the width of the environment the agents will be acting on.</p>
+<p><strong>Length:</strong>This dictates the length of the environment the agents will be acting on.</p>
+<p><strong>Obstacle Locations:</strong>This will be a list of numbers separated by commas. Each number represents the number of a tile that will be made into an obstacle</p>
+<p><strong>Sensor Failure Bar:</strong>The bar indicates the percent chance that the agent's sensor will feed it false information on the environment.</p>
+
+<h1>Onclick functionality</h1>
+<p><strong>Left Click:</strong>Left clicking a tile will augment the value of the tile. The max value that can be achieved is three.
+<p><strong>Right Click:</strong>Right clicking  a tile will decrease the value of the tile. If a tile with a value of zero is right clicked it will become an obstacle.
+<p><strong>Double Click:</strong>Double Clicking an obstacle tile will change the tile into a tile with a value of zero.</p>
+</body>

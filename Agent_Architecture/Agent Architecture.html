@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>TAILS - Agent Architecture</title>
+    <link rel="stylesheet" href="basic_search.css" />
+    <link rel="stylesheet" href="graph.css" />
+</head>
+
+<body>
+    <div id="intro">
+          <h1>Agent Module</h1>
+    </div>
+    
+    <div id="selectors">
+    
+	    <div id="movementSelection">
+	        Agent Type:<br />
+				<select name="movementSelection" id = 'roomTraversal0'>
+				<option value="simpleAgent">Simple Agent</option>
+				<option value="valueSensingAgent">Value Sensing Agent</option>
+				<option value="valueChasingAgent">Value Chasing Agent</option>
+				<option value="miniMappingAgent" selected>Mini-Map Agent</option>
+				<option value="studentMadeMovement">Student Made Agent</option>
+				</select><br />
+				<select name="movementSelection" id = 'roomTraversal1'>
+				<option value="simpleAgent">Simple Agent</option>
+				<option value="valueSensingAgent">Value Sensing Agent</option>
+				<option value="valueChasingAgent">Value Chasing Agent</option>
+				<option value="miniMappingAgent" selected>Mini-Map Agent</option>
+				<option value="studentMadeMovement">Student Made Agent</option>
+				</select><br />
+				<select name="movementSelection" id = 'roomTraversal2'>
+				<option value="simpleAgent">Simple Agent</option>
+				<option value="valueSensingAgent">Value Sensing Agent</option>
+				<option value="valueChasingAgent">Value Chasing Agent</option>
+				<option value="miniMappingAgent" selected>Mini-Map Agent</option>
+				<option value="studentMadeMovement">Student Made Agent</option>
+				</select><br />
+				<select name="movementSelection" id = 'roomTraversal3'>
+				<option value="simpleAgent">Simple Agent</option>
+				<option value="valueSensingAgent">Value Sensing Agent</option>
+				<option value="valueChasingAgent">Value Chasing Agent</option>
+				<option value="miniMappingAgent" selected>Mini-Map Agent</option>
+				<option value="studentMadeMovement">Student Made Agent</option>
+				</select><br />
+	        </div><br />
+	        
+	         	 	
+	        <div id="searchSelection1">
+	        Width:<br />
+	            <select name="searchSelection1" id = 'width'>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16" selected>16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				</select>
+	        </div><br />
+	        
+	         	 	
+	        <div id="searchSelection2">
+	        Length:<br />
+	            <select name="searchSelection2" id = 'length'>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14" selected>14</option>
+				</select>
+	        </div> 
+	        
+	        <div id="startIndex">
+	         Number of Agents:
+	         <select name="numberOfAgents" id = 'quantity'>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4" selected>4</option>
+				</select><br />
+	        1st Start Location:<br />
+			2nd Start Location:<br />
+			3rd Start Location:<br />
+			4th Start Location:<br />
+	        </div>
+	        
+	         <div id="startIndexValues">
+				<input class="textBox" name="startIndex1" id="start0"  type="text" value="223" size="3"><br /> 
+				<input class="textBox" name="startIndex2" id="start1"  type="text" value="208" size="3"><br /> 
+				<input class="textBox" name="startIndex3" id="start2"  type="text" value="15" size="3"><br /> 	
+				<input class="textBox" name="startIndex4" id="start3"  type="text" value="0" size="3"><br />  	
+			</div>
+			
+	        <div id="valueTiles">
+	        Number of initial Bugs:
+				<input class="textBox" name="valueTiles" id="value"  type="text" value=3000  size="4" >
+	        </div>
+	        
+	       	<div id="mods">
+		       	Modifiers:<br />
+	            <input type="checkbox" name="childrenAtPlay" id="childPlay" />
+	            Children At Play<br />
+	            <input type="checkbox" name="murphysLaw" id="murphyLaw" />
+	            Murphy's Law<br />
+	            <input type="checkbox" name="childInterference" id="childInterfere" />
+	            Child Interference<br />
+	            <input type="checkbox" name="hyperAction" id="hyperAction" />
+	            Hyper Action &nbsp; &nbsp;2x<br />
+	         		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 	3x
+	        </div>
+	        
+	        <div id="sensorFail">
+	            <input type="checkbox" name="sensorFail" id="sensorSwitch" />Sensor Failure<br />
+	        </div>    
+	        <div id="modValues">
+	        Modifier Percent:<br />
+				<input class="textBox" name="modValues" id="childPlayValue"  type="text" value="0" size="3" ><br />
+				<input class="textBox" name="modValues" id="murphyLawValue"  type="text" value="0" size="3" ><br />
+				<input class="textBox" name="modValues" id="childInterferenceValue"  type="text" value="0" size="3" ><br />
+				<input class="textBox" name="modValues" id="hyperAction1Value"  type="text" value="0" size="3" ><br /> 
+				<input class="textBox" name="modValues" id="hyperAction2Value"  type="text" value="0" size="3" ><br />
+	        </div>
+	        
+	        <div id = "obstacles">
+	        	Obstacle <input type="checkbox" name="obstacles" id="obstacle" checked/><br />
+	        	Obstacle Locations:<br />
+	        	<input type="text" id="obstacleList" value="207,206,205,203,204,202,201,200,199,198,197,196,195,194,193,177,161,145,129,97,113,81,65,49,33,17,3,19,35,51,67,83,99,115,131,147,163,164,166,165,168,167,169,171,170,172,173,174,158,142,141,140,139,138,137,136,135,134,133,117,101,85,70,103,105,106,104,107,108,110,111,109,78,76,74,72,71,73,75,77,30,46,62,44,28,12,26,42,58,40,24,22,8,38,54,21,52," size="20">
+	        </div>
+	        
+	        <div id="sensorFailPercent">
+        		<input type="range" min="0" max="100" value="10" step="5" id = "sensorFailValue" onchange="showValue(this.value)"/>
+        		
+        	</div>
+        	<div id = "slideValue">
+        		<span id="range">10</span>
+				<script type="text/javascript">
+					function showValue(newValue){
+						document.getElementById("range").innerHTML=newValue;
+					}
+				</script>
+        	</div>
+            <span>
+            	<button id="run">Run</button>
+        	</span>
+        	<span>
+            	<a href="help.html" class="btn" target="_blank" style="text-decoration:none;" id="help"> <button>?</button></a>
+        	</span>
+    </div>
+
+    
+    <div id="visuals">
+        <div id="mapKey">
+            <div id="mapKeyIcons">
+                <div id="keyClean" class="vertex"></div>
+                <div id="key1LevelOfBugs" class="vertex"></div>
+                <div id="key2LevelsOfBugs" class="vertex"></div>
+                <div id="key3LevelsOfBugs" class="vertex"></div>
+                <div id="key4LevelsOfBugs" class="vertex"></div>
+                <div id="keyObstacle" class="vertex"></div>
+                <div id="keyAgent" class="vertex"></div>
+            </div>
+            <div id="mapKeyText">
+                <p>= Clean Tile</p>
+                <p>= 1 Level of Bugs</p>
+                <p>= 2 Levels of Bugs</p>
+                <p>= 3 Levels of Bugs</p>
+                <p>= 4 Levels of Bugs</p>
+                <p>= Obstacle</p>
+                <p>= Agent</p>
+            </div>
+        </div>
+        <div id="map">
+            <img id="sprite0" width="75px" alt="Agent sprite0"
+                 src="lizard2.gif" />
+            <img id="sprite1" width="75px" alt="Agent sprite1"
+                 src="lizard2.gif" />
+            <img id="sprite2" width="75px" alt="Agent sprite2"
+                 src="lizard2.gif" />
+            <img id="sprite3" width="75px" alt="Agent sprite3"
+                 src="lizard2.gif" />
+            <img id="sprite4" width="75px" alt="Agent sprite4"
+                 src="lizard2.gif" />
+        </div>
+        <div id="miniMap0">
+        </div>
+        <div id="miniMap1">
+        </div>
+        <div id="miniMap2">
+        </div>
+        <div id="miniMap3">
+        </div>
+        <div id="miniMap4">
+        </div>
+    </div>
+
+    <!-- Load Javascript support files. -->
+    <script src="jquery172.js"></script>
+    <script src="animate.js"></script>
+    <script src="basic_search.js"></script>
+    <script src="vertex.js"></script>
+    <script src="edge.js"></script>
+    <script src="graph.js"></script>
+    <script src="agent.js"></script>
+    <script src="sensors.js"></script>
+    <script src="effectors.js"></script>
+    <script src="minigraph.js"></script>
+    <script src="search.js"></script>
+    <script src="environment.js"></script>
+    
+    <script>
+        $("#keyClean").css("background-image", 'url(0LayerBug.jpg)');
+        $("#keyClean").css("border-color", Vertex.borderColor);
+        $("#key1LevelOfBugs").css("background-image", 'url(1LayerBug.jpg)');
+        $("#key1LevelOfBugs").css("border-color", Vertex.borderColor);
+        $("#key2LevelsOfBugs").css("background-image", "url(2LayerBug.jpg)");
+        $("#key2LevelsOfBugs").css("border-color", Vertex.borderColor);
+        $("#key3LevelsOfBugs").css("background-image", "url(3LayerBug.jpg)");
+        $("#key3LevelsOfBugs").css("border-color", Vertex.borderColor);
+        $("#key4LevelsOfBugs").css("background-image", "url(4LayerBug.jpg)");
+        $("#key4LevelsOfBugs").css("border-color", Vertex.borderColor);
+        $("#keyObstacle").css("background-image", 'url(obstacleLayerBug.jpg)');
+        $("#keyObstacle").css("border-color", Vertex.borderColor);
+        $("#keyAgent").css("background-image", 'url(0LayerBug.jpg)');
+        $("#keyAgent").css("border-color", Vertex.borderColor);
+    </script>
+</body>
+</html>

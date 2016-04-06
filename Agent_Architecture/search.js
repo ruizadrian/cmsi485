@@ -450,7 +450,7 @@ Search.beam = function (graphData, rootNodeIndex) {
  * @return If path from start to goal node exists, ordered array of searchSpace
  *         indices constructing optimal path, otherwise an empty array
  */
-/*
+
 Search.aStar = function (graphData, waitFlag) {
     var currentNode,
         childArrayToSort,
@@ -533,7 +533,7 @@ Search.aStar = function (graphData, waitFlag) {
         searchTree.vertices[searchTree.map[currentPath]].colorAsSearched();
         closed[currentNode.index] = true;
     }, 1500);
-};*/
+};
 
 /**
  *  Helper for showing the currently paths being considered in the search tree.

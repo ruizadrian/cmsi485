@@ -1,0 +1,316 @@
+p {
+    font-size: 11pt;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+body{
+	background:#CFDBEC;
+}
+
+#intro {
+	position: absolute;
+    text-align: center;
+    margin-bottom: 50px;
+    background: #3fa5df;
+    border:solid;
+    height: 50px;
+    top:1px;
+    left: 15%;
+    right:15%;
+}
+
+#map, #mapKey, #mapKeyIcons, #mapKeyText {
+    position: absolute;
+}
+#map, #mapKey {
+    width: 790px;
+}
+
+#mapKey {
+    height: 115px;
+}
+
+#masterMiniMap {
+	position: absolute;
+	top: -300px;
+    left: -1200px;
+}
+
+#mapKeyIcons {
+    left: 3px;
+}
+
+#mapKeyIcons > .vertex {
+    position: relative;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+
+#miniMap0 > .vertex {
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
+#miniMap1 > .vertex {
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
+#miniMap2 > .vertex {
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
+#miniMap3 > .vertex {
+    width: 10px;
+    height: 10px;
+    opacity:0;
+}
+
+#miniMap4 > .vertex {
+    width: 7px;
+    height: 7px;
+    opacity:0;
+}
+
+#mapKeyText {
+	left: 55px;
+}
+
+#mapKeyText > p {
+    text-align: left;
+    margin-top: 19px;
+    margin-bottom: 35px;
+}
+
+#visuals {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    height: 740px;
+    width: 1200px;
+    border: solid;
+    background:#FFD090;
+    z-index:-2;
+}
+
+#map > span, #map > span > img, #intro > span {
+    position: absolute;
+}
+
+#sprite0 {
+    position: absolute;
+    top: 335px;
+    left: 5px;
+    z-index: 100;
+	width: 46px;
+	height: 35px;
+}
+
+#sprite1 {
+    position: absolute;
+    top: 335px;
+    left: 5px;
+    z-index: 100;
+	width: 46px;
+	height: 35px;
+}
+
+#sprite2 {
+    position: absolute;
+    top: 335px;
+    left: 5px;
+    z-index: 100;
+	width: 46px;
+	height: 35px;
+}
+
+#sprite3 {
+    position: absolute;
+    top: 335px;
+    left: 5px;
+    z-index: 100;
+	width: 46px;
+	height: 35px;
+}
+#sprite4 {
+    position: absolute;
+    top: 335px;
+    left: 5px;
+    z-index: 100;
+	width: 46px;
+	height: 35px;
+}
+
+#pathText {
+    position: relative;
+    border: solid;
+    border-width: 1px;
+    width: 90%;
+    height: 40px;
+    top: 90%;
+    left: 5%;
+}
+
+/*Green Box*/
+#selectors {
+	position: absolute;
+	background:#6edf86;
+	height: 130px;
+	left:15%;
+	width:890px;
+	top:60px;
+	border: solid;
+}
+
+#run {
+	position:absolute;
+    width: 80px;
+    height: 30px;
+    left: 700px;
+    top: 80px;
+    
+}
+
+#help {
+	position:absolute;
+    width: 30px;
+    height: 30px;
+    left: 855px;
+    top: 5px;
+    
+}
+
+/*Search Algorithm*/
+#movementSelection {
+    text-align: left;
+    position: absolute;
+    top: 9px;
+    left:460px;
+}
+
+#movementSelection > select {
+    font-size:10pt;
+	height:18px;
+}
+
+/*Width*/
+#searchSelection1 {
+    text-align: left;
+    position: absolute;
+    left: 625px;
+    top:5px;
+
+}
+/*length*/
+#searchSelection2 {
+    text-align: left;
+    position: absolute;
+	left:625px;
+    top: 80px;
+}
+
+#startIndex {
+    text-align: left;
+    position: absolute;
+	left:280px;
+    top:5px;
+}
+
+#startIndexValues {
+	text-align: left;
+    position: absolute;
+	left:400px;
+    top:28px;
+}
+
+#startIndexValues > input {
+	font-size:10pt;
+	height:12px;
+}
+
+#goalIndex {
+    text-align: left;
+    position: absolute;
+	left:32%;
+    bottom:10%;
+}
+
+#valueTiles {
+	text-align: left;
+    position: absolute;
+	left: 280px;
+    top:105px;
+}
+
+#mods {
+	text-align: left;
+    position: absolute;
+	left: 5px;
+    top:5px;
+}
+
+#sensorFail {
+	text-align: left;
+    position: absolute;
+	left: 780px;
+    top:80px;
+}
+
+#sensorFailPercent {
+	text-align: left;
+    position: absolute;
+	left: 780px;
+    top:95px;
+}
+
+#sensorFailPercent > input{
+    width:100px;
+}
+
+#slideValue{
+	text-align: left;
+    position: absolute;
+    width:80px;
+	left: 780px;
+    top:110px;
+}
+
+#mods > input {
+	height:12px;
+}
+
+#modValues {
+	text-align: left;
+    position: absolute;
+	left: 150px;
+    top:5px;
+	
+}
+
+#modValues > input {
+	font-size:10pt;
+	height:12px;
+}
+
+#dirtySpot {
+	text-align: left;
+    position: absolute;
+	left: 650px;
+    top:5px;
+}
+
+#obstacles {
+	text-align: left;
+    position: absolute;
+	left: 700px;
+    top:5px;
+	
+}
